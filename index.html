@@ -7,6 +7,46 @@
   </head>
   <body>
     <!--content goes here -->
+    <form id="sample_form">
+      <fieldset>
+        <label for="first">first name:</label>  <!--lable for the text block-->
+        <input type="text" name="first" placeholder="enter your first name here" required> <!--the text in the block-->
+      </fieldset>
+
+      <fieldset>
+        <label for="last">last name:</label> <!--label for the text block-->
+        <input type="text" name="last" placeholder="enter your last name here" required> <!--the text in the block-->
+      </fieldset>
+
+      <fieldset>
+        <label for="enrolled">currently enrolled?</label> <!--the label for the checkbox-->
+        <input type="checkbox" name="enrolled" value="enrolled">
+      </fieldset>
+
+      <fieldset>
+        <label for="future classes">interested in future courses?</label> <!--label for radio-->
+        <input type="radio" name="future_classes" value="yes">yes
+        <input type="radio" name="future_classes" value="no">no
+      </fieldset>
+
+      <button id="submit-btn" type="submit">add student</button>
+
+    </form>
+
+    <section id="students">
+      <table>
+        <thead>
+          <th>first name</th>
+          <th>last name</th>
+          <th>enrolled</th>
+          <th>interested in future classes?</th>
+        <thead>
+        <tbody id="student_table">
+          <!--student table data goes here -->
+        </tbody>
+      </table>
+    </section>
+
     <script src="app.js"></script>
   </body>
 </html>
